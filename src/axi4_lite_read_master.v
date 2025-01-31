@@ -21,7 +21,7 @@ module axi4_lite_read_master #(
     localparam  IDLE = 2'b00;
     localparam  READ_ADDR = 2'b01;
     localparam  READ_DATA = 2'b10;
-    reg [1:0] current_state, next_state;
+    reg [1:0] current_state, next_state;// State register
 
     // State transition logic
     always @(posedge clk or negedge resetn) begin
